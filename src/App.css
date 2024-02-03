@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+}
+
+.spacing {
+  padding-bottom: 1000px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animation {
+    max-width: 15%;
+    max-height: 15%;
+    position: relative;
+    animation-name: animation-key;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@keyframes animation-key {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 20%;
+    top: 0px;
+  }
+  50% {
+    left: -20%;
+  }
+  75% {
+    left: 0px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: x-large;
+}
+
+.center {
+  text-align: center;
+  display: flex; /* or display:grid */
+  justify-content: center;
+}
+
+.yes {
+  background-color: rgb(68, 201, 68);
+  border: none;
+}
+
+.no {
+  background-color: rgb(227, 52, 52);
+  border: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animation-final {
+    max-width: 15%;
+    max-height: 15%;
+    position: relative;
+    animation-name: animation-final;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@keyframes animation-final {
+  0% {
+    max-width: 10%;
+    height: auto;
+  }
+  25% {
+    max-width: 20%;
+    height: auto;
+  }
+  50% {
+    max-width: 30%;
+    height: auto;
+  }
+  75% {
+    max-width: 40%;
+    height: auto;
+  }
+  100% {
+    max-width: 10%;
+    height: auto;
+  }
+}
