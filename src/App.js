@@ -1,6 +1,3 @@
-import dog from "./dog.jpg";
-import penguin from "./penguin.png";
-import dogKiss from "./dogkiss.jpg";
 import "./App.css";
 import React, { useState } from "react";
 import Music from "./Music";
@@ -23,7 +20,10 @@ function App() {
         <div className="App">
           <header className="App-header">
             <p>Hello widdle baby</p>
-            <img src={penguin} className="App-logo" />
+            <img
+              src={process.env.PUBLIC_URL + "/penguin.png"}
+              className="App-logo"
+            />
             <div className="spacing"></div>
             <p>Will you be my Valentines?</p>
             <div className="center">
@@ -36,7 +36,10 @@ function App() {
                 </button>
               )}
             </div>
-            <img src={dog} className="animation" />
+            <img
+              src={process.env.PUBLIC_URL + "/dog.jpg"}
+              className="animation"
+            />
           </header>
         </div>
       )}
@@ -45,7 +48,10 @@ function App() {
           <h1 className="center">Wuv u</h1>
           <br />
           <div className="center">
-            <img className="animation-final" src={dogKiss} />
+            <img
+              className="animation-final"
+              src={process.env.PUBLIC_URL + "/dogkiss.jpg"}
+            />
           </div>
           <Music />
         </div>
