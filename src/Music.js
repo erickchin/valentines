@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 
 const Music = () => {
   useEffect(() => {
-    const audio = new Audio("./bg.mp3");
+    const audio = new Audio(process.env.PUBLIC_URL + "/bg.mp3");
     audio.play();
   }, []); // Empty dependency array to ensure the effect runs only once on mount
 
